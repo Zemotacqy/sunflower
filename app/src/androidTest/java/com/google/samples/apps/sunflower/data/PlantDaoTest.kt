@@ -78,4 +78,29 @@ class PlantDaoTest {
     @Test fun testGetPlant() = runBlocking {
         assertThat(plantDao.getPlant(plantA.plantId).first(), equalTo(plantA))
     }
+
+    @Test fun testGetPlants1() = runBlocking {
+        val plantList = plantDao.getPlants().first()
+        assertThat(plantList.size, equalTo(3))
+
+        // Ensure plant list is sorted by name
+        assertThat(plantList[0], equalTo(plantA))
+        assertThat(plantList[1], equalTo(plantB))
+        assertThat(plantList[2], equalTo(plantC))
+    }
+
+    @Test fun testGetPlantsWithGrowZoneNumber1() = runBlocking {
+        val plantList = plantDao.getPlantsWithGrowZoneNumber(1).first()
+        assertThat(plantList.size, equalTo(2))
+        assertThat(plantDao.getPlantsWithGrowZoneNumber(2).first().size, equalTo(1))
+        assertThat(plantDao.getPlantsWithGrowZoneNumber(3).first().size, equalTo(0))
+
+        // Ensure plant list is sorted by name
+        assertThat(plantList[0], equalTo(plantA))
+        assertThat(plantList[1], equalTo(plantB))
+    }
+
+    @Test fun testGetPlant1() = runBlocking {
+        assertThat(plantDao.getPlant(plantA.plantId).first(), equalTo(plantA))
+    }
 }

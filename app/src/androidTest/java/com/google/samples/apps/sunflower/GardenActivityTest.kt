@@ -74,4 +74,184 @@ class GardenActivityTest {
             assertExists()
         }
     }
+
+    @Test fun clickAddPlant_OpensPlantList1() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList2() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList3() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList4() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList5() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList6() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList7() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList8() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList9() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
+
+    @Test fun clickAddPlant_OpensPlantList10() {
+        // Given that no Plants are added to the user's garden
+
+        // When the "Add Plant" button is clicked
+        with(composeTestRule.onNodeWithText("Add plant")) {
+            assertExists()
+            assertIsDisplayed()
+            performClick()
+        }
+
+        composeTestRule.waitForIdle()
+
+        // Then the pager should change to the Plant List page
+        with(composeTestRule.onNodeWithTag("plant_list")) {
+            assertExists()
+        }
+    }
 }

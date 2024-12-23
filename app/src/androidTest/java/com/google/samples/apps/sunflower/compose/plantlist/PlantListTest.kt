@@ -37,6 +37,66 @@ class PlantListTest {
         composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
     }
 
+    @Test
+    fun plantList_itemShown1() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown2() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown3() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown4() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown5() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown6() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown7() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown8() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown9() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
+    @Test
+    fun plantList_itemShown10() {
+        startPlantList()
+        composeTestRule.onNodeWithText("Apple").assertIsDisplayed()
+    }
+
     private fun startPlantList(onPlantClick: (Plant) -> Unit = {}) {
         composeTestRule.setContent { 
             PlantListScreen(plants = listOf(plantForTesting()), onPlantClick = onPlantClick)
